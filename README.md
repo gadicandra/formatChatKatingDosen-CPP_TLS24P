@@ -1,1 +1,1 @@
-# formatChatKatingDosen-CPP_TLS24P
+File CPP ini memiliki manfaat mempermudah mahasiswa UGM untuk membuat kata-kata untuk menghubungi kating dan dosen. File ini mengambil input namapengirim, prodi, angkatan, namadosen, dsb, yang kemudian memberikan input kalimat yang dapat digunakan untuk menghubungi dosen dan kating.

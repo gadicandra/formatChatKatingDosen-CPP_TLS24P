@@ -5,9 +5,9 @@
 #include <variant>
 using namespace std;
 
-// Pilihan Salam Function
+// Pilihan Salam Function (Menentukan salam yang akan digunakan)
 
-int pilihanSalamAlternatifFunction(){
+int pilihanSalamAlternatifFunction(){  // Alternatif berfungsi sebagai fungsi jika input yang dilakukan tidak sesuai
         int pilihanSalam;
 
         //Pilihan Salam
@@ -52,12 +52,12 @@ int pilihanSalamFunction(){
         return pilihanSalam;
 }
 
-// Pilihan Panggilan Function
+// Pilihan Panggilan Function (Menentukan panggilan dari dosen sesuai gender)
 
-int pilihanPanggilanAlternatifFunction(){
+int pilihanPanggilanAlternatifFunction(){	// Alternatif berfungsi sebagai fungsi jika input yang dilakukan tidak sesuai
         int pilihanPanggilan;
 
-        //Pilihan Salam
+        //Pilihan Panggilan
         cout << "----------------------------------------" << endl;
         cout << "1.Pak" << endl;
         cout << "2.Bu" << endl;
@@ -76,7 +76,7 @@ int pilihanPanggilanAlternatifFunction(){
 int pilihanPanggilanFunction(){
         int pilihanPanggilan;
 
-        //Pilihan Salam
+        //Pilihan Panggilan
         cout << "----------------------------------------" << endl;
         cout << "1.Pak" << endl;
         cout << "2.Bu" << endl;
@@ -93,9 +93,9 @@ int pilihanPanggilanFunction(){
 		return pilihanPanggilan;
 }
 
-// Pilihan Prodi Function
+// Pilihan Prodi Function (Menentukan asal prodi)
 
-variant<int, string> pilihanProdiAlternatifFunction(){
+variant<int, string> pilihanProdiAlternatifFunction(){ 	// Alternatif berfungsi sebagai fungsi jika input yang dilakukan tidak sesuai
         int pilihanProdi1;
 
         //Pilihan Prodi
@@ -157,9 +157,9 @@ variant<int, string> pilihanProdiFunction(){
 
 }
 
-// Pilihan Angkatan Function
+// Pilihan Angkatan Function (Menentukan angkatan berapa)
 
-int pilihanAngkatanAlternatifFunction(){
+int pilihanAngkatanAlternatifFunction(){ // Alternatif berfungsi sebagai fungsi jika input yang dilakukan tidak sesuai
         int pilihanAngkatan1, pilihanAngkatan;
 
         //Pilihan Angkatan
@@ -214,7 +214,6 @@ int main() {
     variant<int, string> angkaPilihanProdi;
     string salamx[5] = {"Assalamualaikum Wr. Wb. ", "Selamat Pagi ", "Selamat Siang ", "Selamat Sore ", "Selamat Malam "}; //Variabel Jenis Salam
     string panggilanx[2] = {"Bapak ", "Ibu "}; // Variabel Panggilan
-    string prodix; //Variabel Prodi Custom
     string prodi[3] = {"Teknologi Informasi ", "Teknik Elektro ", "Teknik Biomedis "}; // Variabel Program Studi
     int aktx[5] = {24, 23, 22, 21, 20}; //Variabel Angkatan
 
@@ -225,7 +224,7 @@ int main() {
     cout << "Pilih salah satu (Input Angka):" << endl;
     cin >> pilihanPerkenalan;
 
-
+    //If Condition jika dosen yang dipilih
     if (pilihanPerkenalan == 1){  
         angkaPilihanSalam = pilihanSalamFunction();
         angkaPilihanPanggilan = pilihanPanggilanFunction();
@@ -273,8 +272,8 @@ int main() {
             cout << aktx[angkaPilihanAngkatan] << ". Tujuan saya menghubungi " << panggilanx[angkaPilihanPanggilan] << "adalah ";
             cout << tujuan << ". Mohon maaf mengganggu waktunya dan atas waktunya saya ucapkan terima kasih.";
         }
-        
 
+    //Else condition jika kakak tingkat yang dipilih
     } else if (pilihanPerkenalan == 2){
         angkaPilihanSalam = pilihanSalamFunction();
 
@@ -304,7 +303,7 @@ int main() {
             cout << "20" << aktx[angkaPilihanAngkatan] << ". Tujuan saya menghubungi kakak adalah " << tujuan;
             cout << ". Terimakasih sebelumnya dan mohon maaf jika ada kata-kata yang kurang sopan.";
         }
-
+    // else condition jika input yang diminta tidak sesuai
     } else {
         cout << "Tidak ada dalam pilihan, RUN ULANG!" << endl;
     }

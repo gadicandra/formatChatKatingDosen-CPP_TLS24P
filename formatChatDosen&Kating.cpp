@@ -258,14 +258,14 @@ int main() {
             cout << salamx[angkaPilihanSalam] << panggilanx[angkaPilihanPanggilan] << namaDosen << " " << endl;
             cout << "" << endl;
             cout << "Perkenalkan saya " << namaPanjang << " NIM " << aktx[angkaPilihanAngkatan] << "/";
-            cout << NIU << "/TK/" << angka6NIM << " mahasiswa program studi " << prodi[get<int>(angkaPilihanProdi)] << "angkatan 20";
+            cout << NIU << "/TK/" << angka6NIM << " mahasiswa program studi " << prodi[get<int>(angkaPilihanProdi)] << " angkatan 20";
             cout << aktx[angkaPilihanAngkatan] << ". Tujuan saya menghubungi " << panggilanx[angkaPilihanPanggilan] << "adalah ";
             cout << tujuan << ". Mohon maaf mengganggu waktunya dan atas waktunya saya ucapkan terima kasih.";
         } else {
             cout << salamx[angkaPilihanSalam] << panggilanx[angkaPilihanPanggilan] << namaDosen << " " << endl;
             cout << "" << endl;
             cout << "Perkenalkan saya " << namaPanjang << " NIM " << aktx[angkaPilihanAngkatan] << "/";
-            cout << NIU << "/TK/" << angka6NIM << " mahasiswa program studi " << get<string>(angkaPilihanProdi) << "angkatan 20";
+            cout << NIU << "/TK/" << angka6NIM << " mahasiswa program studi " << get<string>(angkaPilihanProdi) << " angkatan 20";
             cout << aktx[angkaPilihanAngkatan] << ". Tujuan saya menghubungi " << panggilanx[angkaPilihanPanggilan] << "adalah ";
             cout << tujuan << ". Mohon maaf mengganggu waktunya dan atas waktunya saya ucapkan terima kasih.";
         }
@@ -291,12 +291,12 @@ int main() {
         // Proses Output
         if (holds_alternative<int>(angkaPilihanProdi)){
             cout << salamx[angkaPilihanSalam] << "kak, mohon maaf mengganggu waktunya.";
-            cout << "Perkenalkan saya " << namaPanjang << " dari " << prodi[get<int>(angkaPilihanProdi)] << "angkatan ";
+            cout << "Perkenalkan saya " << namaPanjang << " dari " << prodi[get<int>(angkaPilihanProdi)] << " angkatan ";
             cout << "20" << aktx[angkaPilihanAngkatan] << ". Tujuan saya menghubungi kakak adalah " << tujuan;
             cout << ". Terimakasih sebelumnya dan mohon maaf jika ada kata-kata yang kurang sopan.";
         } else {
             cout << salamx[angkaPilihanSalam] << "kak, mohon maaf mengganggu waktunya.";
-            cout << "Perkenalkan saya " << namaPanjang << " dari " << get<string>(angkaPilihanProdi) << "angkatan ";
+            cout << "Perkenalkan saya " << namaPanjang << " dari " << get<string>(angkaPilihanProdi) << " angkatan ";
             cout << "20" << aktx[angkaPilihanAngkatan] << ". Tujuan saya menghubungi kakak adalah " << tujuan;
             cout << ". Terimakasih sebelumnya dan mohon maaf jika ada kata-kata yang kurang sopan.";
         }

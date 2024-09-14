@@ -14,7 +14,7 @@ int pilihanSalamAlternatifFunction(){  // Alternatif berfungsi sebagai fungsi ji
         cout << "3.Selamat Siang" << endl;
         cout << "4.Selamat Sore" << endl;
         cout << "5.Selamat Malam" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Salam yang ingin digunakan (Input Angka):" << endl;
         cin >> pilihanSalam;
 
         if (pilihanSalam == 1 || pilihanSalam == 2 || pilihanSalam == 3 || pilihanSalam == 4 || pilihanSalam == 5){
@@ -36,7 +36,7 @@ int pilihanSalamFunction(){
         cout << "3.Selamat Siang" << endl;
         cout << "4.Selamat Sore" << endl;
         cout << "5.Selamat Malam" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Salam yang ingin digunakan (Input Angka):" << endl;
         cin >> pilihanSalam;
 
         if (pilihanSalam == 1 || pilihanSalam == 2 || pilihanSalam == 3 || pilihanSalam == 4 || pilihanSalam == 5){
@@ -58,7 +58,7 @@ int pilihanPanggilanAlternatifFunction(){	// Alternatif berfungsi sebagai fungsi
         cout << "----------------------------------------" << endl;
         cout << "1.Pak" << endl;
         cout << "2.Bu" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Panggilan dari dosen yang ingin dihubungi (Input Angka):" << endl;
         cin >> pilihanPanggilan;
 
         if (pilihanPanggilan == 1 || pilihanPanggilan == 2){
@@ -77,7 +77,7 @@ int pilihanPanggilanFunction(){
         cout << "----------------------------------------" << endl;
         cout << "1.Pak" << endl;
         cout << "2.Bu" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Panggilan dari dosen yang ingin dihubungi(Input Angka):" << endl;
         cin >> pilihanPanggilan;
 
         if (pilihanPanggilan == 1 || pilihanPanggilan == 2){
@@ -101,7 +101,7 @@ variant<int, string> pilihanProdiAlternatifFunction(){ 	// Alternatif berfungsi 
         cout << "2.Teknik Elektro" << endl;
         cout << "3.Teknik Biomedis" << endl;
         cout << "4.Program Studi Lainnya" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Apa program studimu (Input Angka):" << endl;
         cin >> pilihanProdi1;
 
         if (pilihanProdi1 == 1 || pilihanProdi1 == 2 || pilihanProdi1 == 3){
@@ -132,7 +132,7 @@ variant<int, string> pilihanProdiFunction(){
         cout << "2.Teknik Elektro" << endl;
         cout << "3.Teknik Biomedis" << endl;
         cout << "4.Program Studi Lainnya" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Apa program studimu (Input Angka):" << endl;
         cin >> pilihanProdi1;
 
         if (pilihanProdi1 == 1 || pilihanProdi1 == 2 || pilihanProdi1 == 3){
@@ -166,7 +166,7 @@ int pilihanAngkatanAlternatifFunction(){ // Alternatif berfungsi sebagai fungsi 
         cout << "3.22" << endl;
         cout << "4.21" << endl;
         cout << "5.20" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Angkatan berapa (Input Angka):" << endl;
         cin >> pilihanAngkatan1;
 
         if (pilihanAngkatan1 == 1 || pilihanAngkatan1 == 2 || pilihanAngkatan1 == 3 || pilihanAngkatan1 == 4 || pilihanAngkatan1 == 5){
@@ -188,7 +188,7 @@ int pilihanAngkatanFunction(){
         cout << "3.22" << endl;
         cout << "4.21" << endl;
         cout << "5.20" << endl;
-        cout << "Pilih salah satu (Input Angka):" << endl;
+        cout << "Angkatan berapa (Input Angka):" << endl;
         cin >> pilihanAngkatan1;
 
         if (pilihanAngkatan1 == 1 || pilihanAngkatan1 == 2 || pilihanAngkatan1 == 3 || pilihanAngkatan1 == 4 || pilihanAngkatan1 == 5){
